@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LobyActivity">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+
+        android:id="@+id/hostNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="hostName"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleEditText"></EditText>
+
+    <EditText
+
+        android:id="@+id/openLinkEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="openLink"
+        android:textSize="12dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/hostNameEditText"></EditText>
+
+    <EditText
+
+        android:id="@+id/latitudeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="latitude"
+        android:textSize="12dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/openLinkEditText"></EditText>
+
+    <EditText
+
+        android:id="@+id/longitudeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="longitude"
+        android:textSize="12dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/latitudeEditText"></EditText>
+
+    <EditText
+
+        android:id="@+id/meetingDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="meetingDate"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/longitudeEditText"></EditText>
+
+    <EditText
+
+        android:id="@+id/updateFindDeleteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update &amp; Find &amp; Delete"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/meetingDateEditText"></EditText>
+
+    <Button
+        android:textSize="10dp"
+        android:id="@+id/insertButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Loby Info Insert"
+        app:layout_constraintTop_toBottomOf="@+id/updateFindDeleteEditText"></Button>
+
+    <Button
+
+        android:textSize="10dp"
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Loby Info update"
+        app:layout_constraintTop_toBottomOf="@+id/insertButton"></Button>
+
+    <Button
+
+        android:textSize="10dp"
+        android:id="@+id/findButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Loby Info find"
+        app:layout_constraintTop_toBottomOf="@+id/updateButton"></Button>
+
+    <Button
+
+        android:textSize="10dp"
+        android:id="@+id/findAllButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Loby Info findall"
+        app:layout_constraintTop_toBottomOf="@+id/findButton"></Button>
+
+    <Button
+
+        android:textSize="10dp"
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Loby Info delete"
+        app:layout_constraintTop_toBottomOf="@+id/findAllButton"></Button>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintTop_toBottomOf="@+id/deleteButton"></TextView>
+
+    <Button
+
+        android:id="@+id/userButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="user"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
