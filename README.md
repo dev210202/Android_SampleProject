@@ -8,3 +8,8 @@
 - LiveData와 ViewModel을 사용하여 RecyclerView에 데이터 변경을 감지하여 UI를 업데이트 해주는 예제
 #### RoomTestJava
 - Room을 사용하여 데이터베이스를 구현하는 예제(Insert만 됨)
+#### HiltTest / HiltTestBefore
+- 클린 아키텍쳐 구조에서 Hilt를 사용한 의존성 주입 예제
+#### SocketTest
+- Socket 통신예제
+- Document : https://github.com/kimhanui/chatting-demo
